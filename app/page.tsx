@@ -98,7 +98,7 @@ export default function Home() {
             <div className='flex flex-col items-center justify-center space-y-4 text-center'>
               <div className='space-y-2'>
                 <div className='inline-block rounded-lg bg-muted px-3 py-1 text-sm'>
-                  What's New
+                  What&apos;s New
                 </div>
                 <h2 className='text-3xl font-bold tracking-tighter md:text-4xl'>
                   Latest Updates
@@ -139,7 +139,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p>
-                    We've improved our analytics dashboard to provide more
+                    We&apos;ve improved our analytics dashboard to provide more
                     insights into your performance.
                   </p>
                 </CardContent>

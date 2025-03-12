@@ -68,8 +68,8 @@ export default function ContactUs() {
           <div className='flex flex-col items-center text-center space-y-4 pb-8'>
             <h1 className='text-3xl font-bold'>Contact Us</h1>
             <p className='text-muted-foreground max-w-[700px]'>
-              Have questions about our exam portal? We're here to help. Fill out
-              the form below or use one of our contact methods.
+              Have questions about our exam portal? We&apos;re here to help.
+              Fill out the form below or use one of our contact methods.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ export default function ContactUs() {
               <CardContent>
                 <p>support@examportal.com</p>
                 <p className='text-sm text-muted-foreground mt-1'>
-                  We'll respond within 24 hours
+                  We&apos;ll respond within 24 hours
                 </p>
               </CardContent>
             </Card>
@@ -123,8 +123,8 @@ export default function ContactUs() {
             <CardHeader>
               <CardTitle>Send us a message</CardTitle>
               <CardDescription>
-                Fill out the form below and we'll get back to you as soon as
-                possible.
+                Fill out the form below and we&apos;ll get back to you as soon
+                as possible.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -171,9 +171,9 @@ export default function ContactUs() {
                 <div>
                   <h3 className='font-semibold'>How do I reset my password?</h3>
                   <p className='text-muted-foreground mt-1'>
-                    You can reset your password by clicking on the "Forgot
-                    Password" link on the login page. You'll receive an email
-                    with instructions.
+                    You can reset your password by clicking on the &quot;Forgot
+                    Password&quot; link on the login page. You&apos;ll receive
+                    an email with instructions.
                   </p>
                 </div>
                 <div>
@@ -199,7 +199,7 @@ export default function ContactUs() {
                   <h3 className='font-semibold'>Can I retake an exam?</h3>
                   <p className='text-muted-foreground mt-1'>
                     Yes, you can retake any practice exam. For official exams,
-                    retake policies may vary based on your institution's
+                    retake policies may vary based on your institution&apos;s
                     guidelines.
                   </p>
                 </div>
