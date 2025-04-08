@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { ClerkProvider } from '@clerk/nextjs'
 // import Header from '@/components/header'
 import Footer from '@/components/footer'
+import Headerr from '@/components/Headerr'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,6 +33,7 @@ export default function RootLayout({
           >
             <div className='flex min-h-screen flex-col'>
               {/* <Header /> */}
+              <Headerr />
               <main className='flex-1'>{children}</main>
               <Footer />
             </div>
