@@ -7,7 +7,6 @@ import {
   ArrowRight,
   CheckCircle,
   Clock,
-  FileText,
   XCircle
 } from 'lucide-react'
 
@@ -23,8 +22,6 @@ import {
 import { Progress } from '@/components/ui/progress'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Label } from '@/components/ui/label'
-import { ThemeToggle } from '@/components/theme-toggle'
-import { Header } from '@/components/header'
 
 // Sample questions for the test
 const questions = [

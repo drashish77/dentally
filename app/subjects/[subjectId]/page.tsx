@@ -18,7 +18,7 @@ import { getChaptersBySubjectId } from '@/data/chapters'
 
 interface SubjectPageProps {
   params: {
-    subject: string
+    subjectId: string
   }
 }
 
@@ -29,13 +29,13 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
     redirect('/sign-in')
   }
 
-  const subject = getSubjectById(params.subject)
+  const subject = getSubjectById(params.subjectId)
 
   if (!subject) {
     notFound()
   }
 
-  const chapters = getChaptersBySubjectId(params.subject)
+  const chapters = getChaptersBySubjectId(params.subjectId)
 
   return (
     <div className='container py-8'>
@@ -70,7 +70,7 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
               </CardContent>
               <CardFooter>
                 <Button asChild className='w-full'>
-                  <Link href={`/subjects/${params.subject}/${chapter.id}`}>
+                  <Link href={`/subjects/${params.subjectId}/${chapter.id}`}>
                     Study Chapter
                   </Link>
                 </Button>

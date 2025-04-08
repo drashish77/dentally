@@ -15,8 +15,8 @@ import {
 
 interface ChapterPageProps {
   params: {
-    subject: string
-    chapter: string
+    subjectId: string
+    chapterId: string
   }
 }
 
@@ -27,18 +27,18 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
     redirect('/sign-in')
   }
 
-  const subject = getSubjectById(params.subject)
-  const chapter = getChapter(params.subject, params.chapter)
+  const subject = getSubjectById(params.subjectId)
+  const chapter = getChapter(params.subjectId, params.chapterId)
 
   if (!subject || !chapter) {
     notFound()
   }
 
-  const chapterContent = getChapterContent(params.subject, params.chapter)
-  const allChapters = getChaptersBySubjectId(params.subject)
+  const chapterContent = getChapterContent(params.subjectId, params.chapterId)
+  const allChapters = getChaptersBySubjectId(params.subjectId)
 
   // Find current chapter index to determine next/previous chapters
-  const currentIndex = allChapters.findIndex((c) => c.id === params.chapter)
+  const currentIndex = allChapters.findIndex((c) => c.id === params.chapterId)
   const prevChapter = currentIndex > 0 ? allChapters[currentIndex - 1] : null
   const nextChapter =
     currentIndex < allChapters.length - 1 ? allChapters[currentIndex + 1] : null
@@ -48,7 +48,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
       <div className='flex flex-col gap-8 max-w-4xl mx-auto'>
         <div className='flex items-center gap-2 mb-2'>
           <Button variant='outline' size='sm' asChild>
-            <Link href={`/subjects/${params.subject}`}>
+            <Link href={`/subjects/${params.subjectId}`}>
               <ArrowLeft className='h-4 w-4 mr-1' />
               Back to {subject.name}
             </Link>
@@ -97,14 +97,14 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
         <div className='flex justify-between'>
           {prevChapter ? (
             <Button variant='outline' asChild>
-              <Link href={`/subjects/${params.subject}/${prevChapter.id}`}>
+              <Link href={`/subjects/${params.subjectId}/${prevChapter.id}`}>
                 <ArrowLeft className='h-4 w-4 mr-1' />
                 Previous: {prevChapter.name}
               </Link>
             </Button>
           ) : (
             <Button variant='outline' asChild>
-              <Link href={`/subjects/${params.subject}`}>
+              <Link href={`/subjects/${params.subjectId}`}>
                 <ArrowLeft className='h-4 w-4 mr-1' />
                 Back to All Chapters
               </Link>
@@ -113,7 +113,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
 
           {nextChapter && (
             <Button asChild>
-              <Link href={`/subjects/${params.subject}/${nextChapter.id}`}>
+              <Link href={`/subjects/${params.subjectId}/${nextChapter.id}`}>
                 Next: {nextChapter.name}
                 <ArrowRight className='h-4 w-4 ml-1' />
               </Link>

@@ -47,7 +47,7 @@ export function Header() {
               <div className='text-base md:text-xl font-bold text-[#0077cc]  group-hover:text-blue-800 '>
                 MDS Maker
               </div>
-              <div className='text-[6px] font-medium text-gray-500 group-hover:text-gray-800  '>
+              <div className='text-[6px] md:text-sm font-medium text-gray-500 group-hover:text-gray-800  '>
                 Prep Smart. Rank High.
               </div>
             </div>
