@@ -20,10 +20,10 @@ const Headerr = () => {
       <div className='px-2 md:p-0 md:container flex h-16 items-center justify-between'>
         <div className='flex items-center gap-2 group'>
           <Link href='/' className='flex items-center gap-2'>
-            <div className='text-2xl md:text-3xl group-hover:scale-110'>🦷</div>
+            <div className='text-2xl md:text-3xl group-hover:scale-110'>👨‍💼</div>
             <div className=''>
               <div className='text-base md:text-xl font-bold text-[#0077cc]  group-hover:text-blue-800 '>
-                MDS Maker
+                Officer Maker
               </div>
               <div className='text-[6px] md:text-sm font-medium text-gray-500 group-hover:text-gray-800  '>
                 Prep Smart. Rank High.
