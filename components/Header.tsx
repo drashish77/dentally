@@ -16,8 +16,8 @@ const routes = [
     label: 'Home'
   },
   {
-    href: '/testexam',
-    label: 'Test Exam'
+    href: '/testexams',
+    label: 'Test Exams'
   },
   {
     href: '/result',
