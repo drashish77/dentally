@@ -40,3 +40,5 @@ next-env.d.ts
 /.clerk/
 *.json
 dentally-e4739-firebase-adminsdk-*.json
+*.json
+dentally-e4739-firebase-adminsdk-*.json
