@@ -279,15 +279,15 @@ export default function TestExamPage({ params }: TestExamPageProps) {
                       <h3 className='font-medium'>
                         {index + 1}. {question.question}
                       </h3>
-                      <div className='mt-2 space-y-2'>
+                      <div className='mt-2 space-y-2 border border-red-500'>
                         {question.options.map((option) => (
                           <div
                             key={option.id}
-                            className={`p-2 rounded-md ${
+                            className={`p-2 rounded-md  ${
                               option.id === question.correctAnswer
-                                ? 'bg-green-100 dark:bg-green-900/20'
+                                ? 'bg-green-100 dark:bg-green-900 text-green-500'
                                 : selectedAnswers[question.id] === option.id
-                                ? 'bg-red-100 dark:bg-red-900/20'
+                                ? 'bg-red-100 dark:bg-red-900 text-red-500'
                                 : ''
                             }`}
                           >
