@@ -21,17 +21,18 @@ const Headerr = () => {
       <div className='px-2 md:p-0 md:container flex h-16 items-center justify-between'>
         <div className='flex items-center gap-2 group'>
           <Link href='/' className='flex items-center gap-2'>
-            <div className='text-2xl md:text-3xl group-hover:scale-110'>
+            {/* <div className='text-2xl md:text-3xl group-hover:scale-110'>
               <Image src='/logo_n.png' height={150} width={150} alt='logo' />
-            </div>
-            {/* <div className=''>
-              <div className='text-base md:text-xl font-bold text-[#0077cc]  group-hover:text-blue-800 '>
+            </div> */}
+            <div className='text-2xl md:text-3xl group-hover:scale-110'>👨‍💼</div>
+            <div className='group'>
+              <div className='text-base md:text-xl font-bold text-[#0077cc]  group-hover:text-blue-800 dark:group-hover:text-white'>
                 Officer Maker
               </div>
-              <div className='text-[6px] md:text-sm font-medium text-gray-500 group-hover:text-gray-800  '>
+              <div className='text-[6px] md:text-sm font-medium text-gray-500 group-hover:text-gray-600  dark:group-hover:text-yellow-200'>
                 Prep Smart. Rank High.
               </div>
-            </div> */}
+            </div>
           </Link>
         </div>
 
