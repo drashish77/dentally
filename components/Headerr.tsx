@@ -11,7 +11,7 @@ import { ThemeToggle } from './theme-toggle'
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { Button } from './ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const Headerr = () => {
   const pathname = usePathname()
